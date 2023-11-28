@@ -1,17 +1,23 @@
 # Final-Project-Tableau
 
 ## Project/Goals
-(fill in your description and goals here)
+The objective is to identify the attributes that FIFA prioritizes when calculating players' overall ratings. I chose the overall rating as the primary data for analysis, considering its significance to FIFA players, media, and the players themselves. This metric often takes center stage in FIFA marketing during each game release. This would be a way to get a behind-the-curtain view into their calculations.  
 
 ## Process
-### (your step 1)
-### (your step 2)
+Step 1: Conducted extensive Exploratory Data Analysis (EDA) in Python, utilizing functions such as .describe(), .info(), etc.
+Step 2: Cleaned the data in Python by dropping columns like photos, flags, and club logos. Selected only the first preferred position for accuracy. In Tableau, transformed Nationality into country/region to leverage map features.
+Step 3: Created 5 charts for the overall data.
+Step 4: Categorized preferred positions into attackers, midfielders, defenders, and goalkeepers.
+Step 5: Constructed visualizations of regression models for each position.
+Step 6: Consolidated findings into dashboards and a tableau story.
 
-## Results
-(Fill in which Option you chose, either 1 or 2. List the dataset you selected for the project if you selected Option 2. Also, discuss the visualizations you created, and why. For Option 2, also identify what your data question was, and how you went through the prompts.)
+
+## Results 
+Option 2: FIFA18 data. Developed various visualizations including maps for player nationality based on overall, histograms for overall ratings distribution, clusters for wage vs value, scatter plots for position-wise overall ratings vs value, and line graph: check age vs overall between defenders and non-defenders. Key findings: Top 3 attributes with the highest R-Squared for overall ratings vary by position—attackers: Ball Control, Position, and Reactions; defenders: Interceptions, Marking, and Reactions; goalkeepers: Diving, Positioning, and Reflexes. Overall ratings exhibit a bell curve, suggesting FIFA maintains this distribution to balance ratings across positions. This suggests that FIFA might intentionally adhere to the bell curve distribution, ensuring a balanced distribution of ratings to not give too many low or high ratings.
 
 ## Challenges 
-(discuss challenges you faced in the project)
+The abundance of columns and attributes posed a challenge, particularly in identifying attributes with the highest R-Squared for each position. Deciding which columns to focus on and which to overlook added complexity.
 
 ## Future Goals
-(what would you do if you had more time?)
+Future analysis could involve examining each position individually to pinpoint the most influential attribute for overall ratings. Additionally, exploring the impact of age, value, and wage on overall ratings could provide deeper insights.
+
